@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    const handleScroll = () => {
+      // console.log("height", window.innerHeight);
+      const height = window.innerHeight;
+      document.querySelectorAll(".box").forEach((element) => {
+        console.log(element, "element");
+        const boxTop = element.getBoundingClientRect().top;
+        console.log("boxTop", boxTop);
+        if (boxTop < height) {
+          element.classList.add("show");
+        } else {
+          element.classList.remove("show");
+        }
+      });
+      // console.log("boxDoc", boxDoc);
+      // const boxTop =
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className="heading1">Box animation</h1>
+
+      <div className="box-animate">
+        {Array.from({ length: 24 }).map((curr, indx) => (
+          <div className="box" key={indx}>
+            Box
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
