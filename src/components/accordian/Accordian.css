@@ -1,0 +1,21 @@
+.accordian-center {
+  width: 500px;
+  margin: auto;
+}
+
+.accordian {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accordian-bg {
+  background-color: darkolivegreen;
+  margin: 10px;
+  padding: 16px;
+}
+
+.color-white {
+  color: #fff;
+}

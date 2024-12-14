@@ -45,3 +45,25 @@
 .box.show {
   transform: translateX(0);
 }
+
+/* /padding Start */
+.pb-6 {
+  padding-bottom: 6px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* /padding End */
+
+button {
+  padding: 18px 12px;
+  border-radius: 3px;
+  background-color: cadetblue;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
