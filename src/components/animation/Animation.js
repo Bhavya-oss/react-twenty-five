@@ -26,6 +26,12 @@ function Animation() {
     <div>
       {" "}
       <h1 className="heading1">Box animation</h1>
+      <div className="parent" style={{ padding: "20px" }}>
+        Parent
+        <div className="child-one">One</div>
+        <div className="child-two">Two</div>
+        <div className="child-three">Three</div>
+      </div>
       <div className="box-animate">
         {Array.from({ length: 24 }).map((curr, indx) => (
           <div className="box" key={indx}>

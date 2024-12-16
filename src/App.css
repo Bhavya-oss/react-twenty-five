@@ -6,6 +6,7 @@
 
 .body {
   color: black;
+  position: relative;
 }
 .heading1 {
   margin-top: 50px;
@@ -66,4 +67,28 @@ button {
 
 .text-center {
   text-align: center;
+}
+
+.parent {
+  background-color: blueviolet;
+}
+
+.parent div {
+  padding: 8px;
+}
+.child-one {
+  position: sticky;
+  top: 0; /* Adjust this value to control the offset from the top */
+  background-color: white; /* Optional: to ensure visibility against the background */
+  z-index: 10; /* Ensure it stays on top of other elements */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: for better visibility */
+}
+
+.child-two {
+  background-color: chartreuse;
+}
+
+.child-three {
+  background-color: darkmagenta;
 }
