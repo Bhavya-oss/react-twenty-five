@@ -76,6 +76,13 @@ button {
 .parent div {
   padding: 8px;
 }
+
+.opacity-0 {
+  opacity: 0;
+}
+.opacity-1 {
+  opacity: 1;
+}
 .child-one {
   position: sticky;
   top: 0; /* Adjust this value to control the offset from the top */
@@ -91,4 +98,11 @@ button {
 
 .child-three {
   background-color: darkmagenta;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
