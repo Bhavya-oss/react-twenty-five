@@ -24,3 +24,62 @@ export const ACCORDIAN_DATA = [
       "Yes of course, it is very possible to create an accordion component with another framework.",
   },
 ];
+
+export const TREE_VIEW = [
+  {
+    label: "Home",
+    to: "/",
+  },
+  {
+    label: "Profile",
+    to: "/profile",
+    children: [
+      {
+        label: "Details",
+        to: "details",
+        children: [
+          {
+            label: "Location",
+            to: "location",
+            children: [
+              {
+                label: "City",
+                to: "city",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Settings",
+    to: "/settings",
+    children: [
+      {
+        label: "Account",
+        to: "account",
+      },
+      {
+        label: "Security",
+        to: "security",
+        children: [
+          {
+            label: "Login",
+            to: "login",
+          },
+          {
+            label: "Register",
+            to: "register",
+            children: [
+              {
+                label: "Random data",
+                to: "",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
