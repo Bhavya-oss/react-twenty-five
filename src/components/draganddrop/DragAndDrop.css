@@ -1,0 +1,29 @@
+.todo-list {
+  padding: 12px;
+  border: 1px solid black;
+  max-width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-box {
+  animation: animate-box 12s ease-in infinite;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+@keyframes animate-box {
+  0% {
+    transform: translateX(30%);
+    background-color: black;
+  }
+  50% {
+    transform: translateY(30%);
+    background-color: blue;
+  }
+  100% {
+    transform: translateX(-50%);
+    background-color: brown;
+  }
+}

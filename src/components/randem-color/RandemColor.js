@@ -13,6 +13,7 @@ function RandemColor() {
     setColor(`rgb(${r}, ${g}, ${b})`);
     setStartColor("RGB");
   }
+
   function HexaDecimal() {
     // setHexa(
     //   `#${r.toString(16).padStart(2, 0)}${g.toString(16).padStart(2, 0)}${b
@@ -46,6 +47,13 @@ function RandemColor() {
     setHexa(hexaColor);
     setStartColor("HEXA");
   }
+
+  let arr = ["a", "b"];
+  console.log(arr);
+  function Print() {
+    console.log("Print");
+  }
+  console.log(typeof Print);
   return (
     <div
       style={{
