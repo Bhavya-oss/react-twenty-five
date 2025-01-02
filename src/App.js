@@ -22,6 +22,9 @@ import UseReducer from "./components/useReducer/UseReducer";
 import CustomHook from "./components/customhook/CustomHook";
 import Post from "./components/HTTP/Post";
 import MainTable from "./components/addeditdeleterow/MainTable";
+import Todo from "./components/Todo/Todo";
+import Counter from "./components/redux/Counter";
+import SearchFilter from "./components/searchFilter/SearchFilter";
 export const createdContext = createContext();
 
 function App() {
@@ -35,9 +38,12 @@ function App() {
   return (
     <>
       <createdContext.Provider value={counterData}>
-        <MainTable />
+        {/* <SearchFilter /> */}
+        {/* <Counter /> */}
+        {/* <Todo /> */}
+        {/* <MainTable /> */}
         {/* <Animation /> */}
-        {/* <Accordian /> */}
+        <Accordian />
         <RandemColor />
         {/* <HoverStar /> */}
         <ImageSlider url="https://picsum.photos/v2/list" limit="10" page="1" />
